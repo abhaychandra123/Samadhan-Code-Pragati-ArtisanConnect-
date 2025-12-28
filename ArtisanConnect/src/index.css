@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Earthy, organic design system for Artisan Traceability Platform */
+
+@layer base {
+  :root {
+    /* Warm, earthy color palette */
+    --background: 35 30% 97%;
+    --foreground: 25 25% 15%;
+
+    --card: 35 25% 95%;
+    --card-foreground: 25 25% 15%;
+
+    --popover: 35 30% 97%;
+    --popover-foreground: 25 25% 15%;
+
+    /* Terracotta primary */
+    --primary: 15 65% 50%;
+    --primary-foreground: 35 30% 97%;
+
+    /* Sage green secondary */
+    --secondary: 140 25% 75%;
+    --secondary-foreground: 25 25% 15%;
+
+    /* Warm beige muted */
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    /* Sage green accent */
+    --accent: 140 30% 45%;
+    --accent-foreground: 35 30% 97%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 35 30% 97%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 15 65% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --terracotta: 15 65% 50%;
+    --terracotta-light: 15 60% 65%;
+    --terracotta-dark: 15 70% 40%;
+    --sage: 140 30% 45%;
+    --sage-light: 140 25% 75%;
+    --sage-dark: 140 35% 35%;
+    --cream: 35 30% 97%;
+    --warm-brown: 25 25% 15%;
+    --ochre: 40 70% 55%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(15 65% 50% / 0.1), hsl(140 30% 45% / 0.1));
+    --gradient-card: linear-gradient(180deg, hsl(35 30% 97%), hsl(35 25% 93%));
+    --gradient-warm: linear-gradient(135deg, hsl(35 40% 95%), hsl(15 50% 95%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 25% 15% / 0.1);
+    --shadow-warm: 0 8px 30px -8px hsl(15 65% 50% / 0.2);
+    --shadow-elevated: 0 12px 40px -10px hsl(25 25% 15% / 0.15);
+
+    /* Typography */
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-handwritten: 'Caveat', cursive;
+
+    --sidebar-background: 35 25% 95%;
+    --sidebar-foreground: 25 25% 15%;
+    --sidebar-primary: 15 65% 50%;
+    --sidebar-primary-foreground: 35 30% 97%;
+    --sidebar-accent: 140 25% 75%;
+    --sidebar-accent-foreground: 25 25% 15%;
+    --sidebar-border: 35 20% 85%;
+    --sidebar-ring: 15 65% 50%;
+  }
+
+  .dark {
+    --background: 25 25% 10%;
+    --foreground: 35 20% 92%;
+
+    --card: 25 20% 14%;
+    --card-foreground: 35 20% 92%;
+
+    --popover: 25 25% 10%;
+    --popover-foreground: 35 20% 92%;
+
+    --primary: 15 55% 55%;
+    --primary-foreground: 25 25% 10%;
+
+    --secondary: 140 20% 25%;
+    --secondary-foreground: 35 20% 92%;
+
+    --muted: 25 20% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 140 25% 35%;
+    --accent-foreground: 35 20% 92%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 35 20% 92%;
+
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 15 55% 55%;
+
+    --sidebar-background: 25 20% 12%;
+    --sidebar-foreground: 35 20% 92%;
+    --sidebar-primary: 15 55% 55%;
+    --sidebar-primary-foreground: 25 25% 10%;
+    --sidebar-accent: 140 20% 25%;
+    --sidebar-accent-foreground: 35 20% 92%;
+    --sidebar-border: 25 20% 18%;
+    --sidebar-ring: 15 55% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  .font-handwritten {
+    font-family: var(--font-handwritten);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-heart-bloom {
+    animation: heartBloom 0.8s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .text-gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--ochre)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+@keyframes heartBloom {
+  0% { 
+    opacity: 0; 
+    transform: scale(0); 
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2); 
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1); 
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
