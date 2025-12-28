@@ -28,8 +28,8 @@ Together, these platforms convert fragmented skill centers into dependable produ
 
 ## Demo Video
 
-### 1. UPAY-Pragati : https://youtu.be/tX920bIeaOI 
-### 2. ArtisanConnect : 
+### 1. UPAY-Pragati : https://www.youtube.com/watch?v=1UC1rj7L-bc 
+### 2. ArtisanConnect : https://youtu.be/tX920bIeaOI
 ---
 ## The Two Pillars of Innovation
 
