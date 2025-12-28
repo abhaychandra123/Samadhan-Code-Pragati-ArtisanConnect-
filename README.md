@@ -7,7 +7,7 @@
 
 ---
 
-## 🌍 Executive Summary
+## Executive Summary
 
 Team **Change Makers** presents a two-pronged technological solution designed to transform how NGO Skill Development Centers operate and sell.
 
@@ -25,7 +25,13 @@ Together, these platforms convert fragmented skill centers into dependable produ
 
 ---
 
-## 🚀 The Two Pillars of Innovation
+
+## Demo Video
+
+### 1. UPAY-Pragati : https://youtu.be/tX920bIeaOI 
+### 2. ArtisanConnect : 
+---
+## The Two Pillars of Innovation
 
 ### 1. UPAY-Pragati — The Operations Engine
 
@@ -61,13 +67,13 @@ Festival-only demand leads to unstable and seasonal artisan incomes.
 
 ---
 
-## 🛠️ Project 1: UPAY-Pragati
+## Project 1: UPAY-Pragati
 
 **Directory:** `/Pragati`
 
 UPAY-Pragati is optimized for low-end devices and standardizes operations across UPAY’s 40+ centers.
 
-### 🔑 Key Features
+### Key Features
 
 ### Maturity Diagnosis Engine
 
@@ -113,7 +119,7 @@ A mobile-first horizontal scroll grid to manage shared machine resources efficie
 
 ---
 
-### 💻 Tech Stack (UPAY-Pragati)
+### Tech Stack (UPAY-Pragati)
 
 - Frontend: React (Vite), Tailwind CSS  
 - State Management: React Context API (MaturityContext)  
@@ -122,13 +128,13 @@ A mobile-first horizontal scroll grid to manage shared machine resources efficie
 
 ---
 
-## 🎁 Project 2: ArtisanConnect
+## Project 2: ArtisanConnect
 
 **Directory:** `/ArtisanConnect`
 
 ArtisanConnect is designed for corporate CSR heads and employees receiving artisan-made gifts.
 
-### 🔑 Key Features
+### Key Features
 
 ### QR Traceability
 
@@ -161,7 +167,7 @@ Visually connects urban corporate offices to rural production clusters.
 
 ---
 
-### 💻 Tech Stack (ArtisanConnect)
+### Tech Stack (ArtisanConnect)
 
 - Frontend: React (Vite), TypeScript  
 - UI: Tailwind CSS, Shadcn UI  
@@ -170,7 +176,7 @@ Visually connects urban corporate offices to rural production clusters.
 
 ---
 
-## 📥 Installation & Local Setup
+## Installation & Local Setup
 
 ### 1. Clone the Repository
 
@@ -196,7 +202,7 @@ http://localhost:8080
 
 ---
 
-## 🏆 Projected Impact Metrics
+## Projected Impact Metrics
 
 - **Operational Impact**  
   60% reduction in bulk order rejections through the Standardization Vault  
@@ -209,7 +215,7 @@ http://localhost:8080
 
 ---
 
-## 📌 Why This Matters
+## Why This Matters
 
 UPAY-Pragati ensures **supply-side reliability**.  
 ArtisanConnect ensures **demand-side stability**.
